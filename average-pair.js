@@ -9,15 +9,15 @@ function averagePair(nums, targetAvg) {
   let left = 0;
   let right = nums.length - 1;
 
-  while(left < right){
+  while (left < right) {
     const avg = (nums[right] + nums[left]) / 2;
 
-    if (avg === targetAvg){
-      return true
-    } else if (avg > targetAvg){
-      right --;
+    if (avg === targetAvg) {
+      return true;
+    } else if (avg > targetAvg) {
+      right--;
     } else {
-      left ++;
+      left++;
     }
   }
   return false;
